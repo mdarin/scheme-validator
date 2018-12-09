@@ -1,0 +1,1 @@
+del lex.zubr_.c z_tab.h z_tab.c v.exe

@@ -1,0 +1,25 @@
+версия грамматики 0.2 бетта
+17:17 18.10.2014
+
+%palin text between%
+
+Document = Declaration Root.
+Declaration = %<?xml version="1.0" encoding="UTF-8" ?>%.
+Root = <schemes> Schemes '<' '/' schemes '>'.
+Schemes = {Scheme}.
+Scheme = <scheme> Complexes </scheme>.
+Complexes = {Complex}.
+Complex = <complex> Arms </complex>.
+Arms = {Arm}.
+Arm = <arm> Imitators </arm>.
+Imitators = {Imitator}.
+Imitator = <imitator/>  
+	 |<imitator> [Dummies] [Bods] </imitator>.
+Dummies = {Dummy}.
+Dummy = <dummy/>
+      | <dummy> </dummy>.
+Bods = {Bod}.
+Bod = <bod> Tabs </bod>.
+Tabs = {Tab}.
+Tab = <tab_name> </tab_name>
+    | <tab_name> Plain text </tab_name>.	
